@@ -7,9 +7,9 @@
     <h1>Student List</h1>
     <ul>
         {% for student in students %}
-            <li>{{ student.name }} (Age: {{ student.age }}, Grade: {{ student.grade }})</li>
-        {% endfor %}
+    <li>{{ student["nombre"] + " " + student["apellido_paterno"] + student["apellido_materno"] + " " + student["fecha_nacimiento"] + " " + student["matricula"]}}</li>
+{% endfor %}
     </ul>
-    <a href="/add_student">Add New Student</a>
+    <a href="/new_student">Add New Student</a>
 </body>
 </html>
