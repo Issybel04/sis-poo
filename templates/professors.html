@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <h1>Profesores</h1>
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Apellido Paterno</th>
+      <th>Apellido Materno</th>
+        </tr>
+    {% for professor in professors_list %}
+    <tr>
+      <td>{{professor.id_professor}}</td>
+      <td>{{professor.nombre}}</td>
+      <td>{{professor.apellido_paterno}}</td>
+      <td>{{professor.apellido_materno}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/new_professor" type="button" class="btn btn-primary"
+    >Crear profesor</a
+  >
+</div>
+{% endblock %}
