@@ -8,13 +8,14 @@
       <th>Nombre</th>
       <th>Apellido Paterno</th>
       <th>Apellido Materno</th>
-        </tr>
-    {% for professor in professors_list %}
+    </tr>
+    {% for profesor in professors_list %}
     <tr>
-      <td>{{professor.id_professor}}</td>
-      <td>{{professor.nombre}}</td>
-      <td>{{professor.apellido_paterno}}</td>
-      <td>{{professor.apellido_materno}}</td>
+      <td>{{profesor.id_professor}}</td>
+      <td>{{profesor.nombre}}</td>
+      <td>{{profesor.apellido_paterno}}</td>
+      <td>{{profesor.apellido_materno}}</td>
+      <td>{{profesor.fecha_nacimiento}}</td>
     </tr>
     {% endfor %}
   </table>

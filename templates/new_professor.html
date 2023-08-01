@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <div class="container">
   <h1>Nuevo profesor</h1>
-  <form action="/new_professors" method="POST">
+  <form action="/new_professor" method="POST">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Nombre</label>
       <input type="text" name="nombre" class="form-control" />
@@ -19,9 +19,7 @@
       <input type="text" name="apellido_materno" class="form-control" />
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label"
-        >ID</label
-      >
+      <label for="exampleInputPassword1" class="form-label">ID</label>
       <input type="text" name="id_professor" class="form-control" />
     </div>
 
