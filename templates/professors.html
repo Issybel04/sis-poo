@@ -6,16 +6,13 @@
     <tr>
       <th>ID</th>
       <th>Nombre</th>
-      <th>Apellido Paterno</th>
-      <th>Apellido Materno</th>
+      <th>Edad</th>
     </tr>
     {% for profesor in professors_list %}
     <tr>
       <td>{{profesor.id_professor}}</td>
-      <td>{{profesor.nombre}}</td>
-      <td>{{profesor.apellido_paterno}}</td>
-      <td>{{profesor.apellido_materno}}</td>
-      <td>{{profesor.fecha_nacimiento}}</td>
+      <td>{{profesor.nombre_completo()}}</td>
+      <td>{{profesor.calcular_edad()}}</td>
     </tr>
     {% endfor %}
   </table>

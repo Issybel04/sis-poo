@@ -4,16 +4,20 @@
   <h1>Materias</h1>
   <table class="table table-striped">
     <tr>
+      <th>ID</th>
       <th>Nombre</th>
+      <th>Créditos</th>
     </tr>
     {% for course in courses_list %}
     <tr>
+      <td>{{course.id_materia}}</td>
       <td>{{course.nombre}}</td>
+      <td>{{course.creditos}}</td>
     </tr>
     {% endfor %}
   </table>
   <a href="/new_course" type="button" class="btn btn-primary"
-    >Añadir materias</a
+    >Crear materia</a
   >
 </div>
 {% endblock %}
