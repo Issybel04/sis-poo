@@ -8,7 +8,7 @@ class Person:
         self.fecha_nacimiento = fech_nacimiento
 
     def calcular_edad(self):
-        fecha = datetime.strptime(self.fecha_nacimiento, "%Y - %m - %d")
+        fecha = datetime.strptime(self.fecha_nacimiento, "%Y-%m-%d")
         hoy = datetime.now()
         edad = hoy.year - fecha.year - ((hoy.month, hoy.day) < (fecha.month, fecha.day))
         return edad
